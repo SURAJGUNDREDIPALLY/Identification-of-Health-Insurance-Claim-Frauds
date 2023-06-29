@@ -1,0 +1,182 @@
+{% extends 'RUser/Header.html' %}
+{% block userblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#000000;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 904px;
+    height: 202px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style4 {color: #FFFF00; font-weight: bold; }
+.style6 {
+	font-size: 24px;
+	color: #FFFF00;
+	font-weight: bold;
+}
+        .style7 {color: #FFFF00}
+.style12 {font-size: 16px}
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-5">
+
+                   <form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+							<p class="text-uppercase pull-center style1 style12">Prediction Of <span class="style1">Health Insurance Claim Fraud</span> !!! </p>
+                            <hr>
+
+                                {% csrf_token %}
+                                <table width="1013" align="center">
+                                  <tr>
+                                    <td height="54" colspan="4" bgcolor="#FF0000"><div align="center" class="style6">Enter Health Insurance Datasets Details Here !!! </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Enter RID</div></td>
+                                    <td><input type="text" name="RID"></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Enter Sum Insured</div></td>
+                                    <td><input type="text" name="Sum_Insured"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Enter Age</div></td>
+                                    <td><input type="text" name="age"></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Enter Sex</div></td>
+                                    <td><select name="sex">
+                                      <option>---Select---</option>
+                                      <option>Male</option>
+                                      <option>Female</option>
+                                    </select>                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Enter Weight</div></td>
+                                    <td><input type="text" name="weight"></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Enter BMI </div></td>
+                                    <td><input type="text" name="bmi"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Enter Hereditary Diseases</div></td>
+                                    <td><input type="text" name="hereditary_diseases"></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Enter No Of Dependents</div></td>
+                                    <td><select name="no_of_dependents">
+                                      <option>---Select---</option>
+                                      <option>0</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                      <option>6</option>
+                                      <option>7</option>
+                                      <option>8</option>
+                                      <option>9</option>
+                                      <option>10</option>
+                                      </select></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">
+                                      <div align="center">Enter Smoker</div>
+                                    </div></td>
+                                    <td><select name="smoker">
+                                      <option>---Select---</option>
+                                      <option>0</option>
+                                      <option>1</option>
+                                                                        </select></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Enter City</div></td>
+                                    <td><input type="text" name="city"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">
+                                      <div align="center">Enter Blood Pressure</div>
+                                    </div></td>
+                                    <td><input type="text" name="bloodpressure"></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Enter Diabetes</div></td>
+                                    <td><select name="diabetes">
+                                      <option>---Select---</option>
+                                      <option>0</option>
+                                      <option>1</option>
+                                                                        </select></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Enter Regular Excercise</div></td>
+                                    <td><select name="regular_ex">
+                                      <option>---Select---</option>
+                                      <option>0</option>
+                                      <option>1</option>
+                                    </select></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Enter Job Title</div></td>
+                                    <td><input type="text" name="job_title"></td>
+                                  </tr>
+                                  <tr>
+                                    <td width="271" height="44" bgcolor="#FF0000"><div align="center" class="style4"><span class="style2">Enter Claim</span></div></td>
+                                    <td width="237"><input type="text" name="claim"></td>
+                                    <td width="217">&nbsp;</td>
+                                    <td width="268"><input name="submit" type="submit" class="style1" value="Predict"></td>
+                                  </tr>
+                                </table>
+					 </fieldset>
+				  </form>
+
+
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+
+                            <hr>
+                            <div>
+                              <table width="878" border="0" align="center" >
+                                    <tr><td width="614" height="55" bgcolor="#FF0000"><div align="center"><span class="style6">Prediction of Health Insurance Claim Fraud Status </span> <span class="style4">:: </span><span class="style7">--&gt;</span> </div></td>
+
+
+
+                                      <td width="254" bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center"><strong>{{objs}}</strong></div></td>
+                                    </tr>
+                      </table>
+
+
+
+                            </div>
+
+
+
+
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>

@@ -1,0 +1,36 @@
+Identifying Health Insurance Claim Frauds Using Mixture of Clinical Concepts
+
+IEEE Transactions on Services Computing,Volume:15,Issue:4,Issue Date:01.July-Aug.2022
+
+Healthcare, Insurance, Fraud, Mixture Model,Clinical Concepts
+
+
+Identifying_Health_Insurance_Claim_Frauds
+
+
+
+
+identifying_health_insurance_claim_frauds
+
+
+
+insurance_claim_frauds
+
+RID
+Sum_Insured
+age
+sex
+weight
+bmi
+hereditary_diseases
+no_of_dependents
+smoker
+city
+bloodpressure
+diabetes
+regular_ex
+job_title
+claim
+Prediction
+
+
